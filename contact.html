@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Raine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="halftone-background"></div>
+
+    <div class="main">
+  
+      <div class="nav-bar">
+        <a href="./index.html"><div class="nav-item">
+          <span>About</span>
+        </div></a>
+        <a href="./work.html"><div class="nav-item">
+          <span>Work</span>
+        </div></a>
+        <a href="./contact.html"><div class="nav-item"  id="nav-selected">
+          <span>Contact</span>
+        </div></a>
+      </div>
+      <div class="page-content">
+          <h1>Contact</h1>
+          
+          <div class="page-text">
+            <h3>Need to contact me?</h3>
+            <div class="grid-container">
+                <div class="item1">
+                  <img class="reigen" src="./assets/reigen.png" alt="reigen arataka from mob psycho" id="reigen">
+                  <p><i>Run, if things go south.</i></p>
+                  <h6> - Reigen Arataka, Greatest Psychic of the 21st Century</h6>
+                </div>
+                <div class="item2">
+                  <form id="myForm">
+                    <h5>Complaints</h5>
+                    <br>
+                    <label>Name: </label>
+                    <input type="text" id="name">
+                    <br>
+                    <br>
+                    <label>Email: </label>
+                    <input type="text" id="email">
+                    <br>
+                    <br>
+                    <label>Complaint: </label>
+                    <input type="text" id="complaint">
+                    <br>
+                    <br>
+                    <input type="submit" id="submit" onclick="
+                    document.getElementById('reigen').classList.add('reigen-spin');
+                    console.log('start');
+                    setTimeout( function() { 
+                      document.getElementById('reigen').classList.remove('reigen-spin');
+                      console.log('end'); 
+                    } , 1500);
+                    ">
+                    <script>         document.addEventListener('DOMContentLoaded', (event) => {
+                      document.getElementById("myForm").addEventListener("submit", function(e) {
+                          e.preventDefault() // Cancel the default action
+
+                      });
+                  });</script>
+                  </form>
+                </div>  
+                <div class="item3">
+                  <a class="media-icon-container" href="https://www.instagram.com/csgradle/" target="_blank">
+                    <img class="media-icon" src="./assets/icon-instagram.png" alt="Instagram" />
+                  </a>
+                  <a class="media-icon-container" href="https://github.com/koizura" target="_blank">
+                    <img class="media-icon" src="./assets/icon-github.png" alt="Github" />
+                  </a>
+                  <a class="media-icon-container" href="https://www.youtube.com/channel/UC0Q75fuJlbfw2oE8TlBVJtQ" target="_blank">
+                    <img class="media-icon" src="./assets/icon-youtube.png" alt="Youtube" />
+                  </a>
+                </div>
+              </div>
+            
+          </div>
+          
+          
+          
+      </div>
+      
+
+    </div>
+    
+  </body>
+</html>
